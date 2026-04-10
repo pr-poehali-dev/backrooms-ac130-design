@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1775855062712303605.html"
 	],
 	prefix: "",
 	theme: {
@@ -17,8 +18,17 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		fontFamily: {
+			oswald: ['Oswald', 'sans-serif'],
+			roboto: ['Roboto', 'sans-serif'],
+		},
 		extend: {
 			colors: {
+				'war-red': '#cc1a1a',
+				'war-red-bright': '#ff2020',
+				'war-dark': '#0a0a0a',
+				'war-dark2': '#111111',
+				'war-dark3': '#1a1a1a',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -88,7 +98,9 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease forwards',
+				'pulse-red': 'pulse-red 2s ease-in-out infinite',
 			}
 		}
 	},
